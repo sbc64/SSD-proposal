@@ -25,7 +25,7 @@ The current [UI of gnosis safe](https://github.com/gnosis/safe-react) is using t
 
 1. The same [smart contract](https://github.com/althea-mesh/aragon-node-list/blob/master/contracts/Althea.sol) used in the current aragon dao implementation, minus the `AragonApp.sol` and Aragon `Access control list`.
 
-2. Build our own Althea frontend using [pdapparatus](https://github.com/austintgriffith/dapparatus) or [truffle drizzle](https://truffleframework.com/drizzle).
+2. Build our own Althea frontend using [dapparatus](https://github.com/austintgriffith/dapparatus) or [truffle drizzle](https://truffleframework.com/drizzle).
     * Port the current Althea aragon app frontend to not use Aragon UI components.
     * Upon initialization, this front end calls the same steps that the GSTE calls to deploy a multisig wallet of the [safe contracts](https://github.com/gnosis/safe-contracts) plus it also deploys the existing subnetdao contract. This subnetdao contract will be owned by the multisig.
     * The ui will also need a way of executing external contract calls from the GSTE multsig. This capability already exists within the contacts, it just needs the frontend for it.
