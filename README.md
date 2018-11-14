@@ -6,22 +6,22 @@ A subnetdao contract has three functionalities:
 
  1. Administrate, via a multisig, a hash map of ipv6 with their corresponding ethereum address.
  2. Collect fees from members of this hash map.
- 3. Capability of admistrating collected fees on behalf the subnetDAO owners.
+ 3. Capability of administrating collected fees on behalf the subnetDAO owners.
 
 ### Current subnetDAO implementation
 
-Althea has been using Aragon as their subnetDAO framework. Aragon provides an easy (compared with other DAO frameworks availabel) framework for creating complex DAOs. Functionality such as upgradeability of Aragon apps, permissions, and multiple apps that could cooperate ina single DAO.
+Althea has been using Aragon as their subnetDAO framework. Aragon provides an easy (compared with other DAO frameworks available) framework for creating complex DAOs. Functionality such as upgrade-ability of Aragon apps, permissions, and multiple apps that could cooperate in a single DAO.
 
 ### Possible implementations of subnetdaos
 
 1. Gnosis safe team edition.
-    * The gnosis safe personal edition has meta transaction capabilities which **might** be useful when althea migrates to a stable coin. This allows end users (not subnedao owners) to use only dai.
+    * The gnosis safe personal edition has meta transaction capabilities which **might** be useful when Althea migrates to a stable coin. This allows end users (not subnedao owners) to use only dai.
 
 2. (pending)
 
 #### SubnetDAO stack when using gnosis safe team edition (GSTE)
 
-The current [UI of gnosis safe](https://github.com/gnosis/safe-react) is using the GSTE. Essentially it is a multisig interface that handles cryto assets. The contracts for gnosis safe are in a single repo so an implementation of a subnetdao could be the following:
+The current [UI of gnosis safe](https://github.com/gnosis/safe-react) is using the GSTE. Essentially it is a multisig interface that handles crypto assets. The contracts for gnosis safe are in a single repo so an implementation of a subnetdao could be the following:
 
 1. The same [smart contract](https://github.com/althea-mesh/aragon-node-list/blob/master/contracts/Althea.sol) used in the current aragon dao implementation.
 
@@ -39,4 +39,4 @@ When the TCR for Althea gets released this TCR will curate the multisig contract
 
 ### Warnings
 
-It seems that the gnosis safe is still under development and that they might also suffer from, perfect developement cycle (they never have to maintain a LTS) where they just push new code out, because of their succesful million dollar ICO.
+The gnosis safe is still under heavy development and that they might also suffer from, perfect development cycle (they never have to maintain a LTS) where they just push new code out, because of their successful million dollar ICO.
