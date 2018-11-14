@@ -23,7 +23,7 @@ Althea has been using Aragon as their subnetDAO framework. Aragon provides an ea
 
 The current [UI of gnosis safe](https://github.com/gnosis/safe-react) is using the GSTE. Essentially it is a multisig interface that handles crypto assets. The contracts for gnosis safe are in a single repo so an implementation of a subnetdao could be the following:
 
-1. The same [smart contract](https://github.com/althea-mesh/aragon-node-list/blob/master/contracts/Althea.sol) used in the current aragon dao implementation.
+1. The same [smart contract](https://github.com/althea-mesh/aragon-node-list/blob/master/contracts/Althea.sol) used in the current aragon dao implementation, minus the `AragonApp.sol` and Aragon `Access control list`.
 
 2. Build our own Althea frontend using [pdapparatus](https://github.com/austintgriffith/dapparatus) or [truffle drizzle](https://truffleframework.com/drizzle).
     * Port the current Althea aragon app frontend to not use Aragon UI components.
