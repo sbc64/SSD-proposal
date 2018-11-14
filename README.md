@@ -17,7 +17,9 @@ Althea has been using Aragon as their subnetDAO framework. Aragon provides an ea
 1. Gnosis safe team edition.
     * The gnosis safe personal edition has meta transaction capabilities which **might** be useful when Althea migrates to a stable coin. This allows end users (not subnedao owners) to use only dai.
 
-2. (pending)
+2. Gnosis multisig.
+    * The current gnosis multisig has the capability of [Interacting with any contracts with UI support](https://github.com/gnosis/MultiSigWallet#features)
+
 
 #### SubnetDAO stack when using gnosis safe team edition (GSTE)
 
@@ -31,6 +33,11 @@ The current [UI of gnosis safe](https://github.com/gnosis/safe-react) is using t
     * The ui will also need a way of executing external contract calls from the GSTE multsig. This capability already exists within the contacts, it just needs the frontend for it.
 3.  When a subnet users wants to check their status on the subnet, they can access the domain of the subnetdao.This domain points to the its own subnetdao contracts. Each subnetdao will need their own domain and hosting capabilities. A single website for all of the Althea subnetdaos is possible but out of scope for now.
 
+#### SubnetDAO stack when using the Gnosis Multisig
+
+Same as the gnosis safe but with a custom front end capable of interacting with the subnetdao contract on behalf of the multisig.
+
+The only concern is the possibility of deprecation since the gnosis safe is going to be the new wallet
 
 ### TCR considerations
 
@@ -40,3 +47,8 @@ When the TCR for Althea gets released this TCR will curate the multisig contract
 ### Warnings
 
 The gnosis safe is still under heavy development and that they might also suffer from, perfect development cycle (they never have to maintain a LTS) where they just push new code out, because of their successful million dollar ICO.
+
+
+### Conclusions
+
+The possibility of using a multisig to handle the hashmap of a subnet members is present. But most of the work is going to be done in creating a UI for the althea  contracts that is capable of interfacing with the multisig contracts. The easiest solution I can think off is forking current multisig frontends and adding the current althea front end to it.
