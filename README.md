@@ -51,4 +51,4 @@ The gnosis safe is still under heavy development and that they might also suffer
 
 ### Conclusions
 
-The possibility of using a multisig to handle the hashmap of a subnet members is present. But most of the work is going to be done in creating a UI for the althea  contracts that is capable of interfacing with the multisig contracts. The easiest solution I can think off is forking current multisig frontends and adding the current althea front end to it.
+The possibility of using a multisig to handle the hashmap of a subnet members is present. But most of the work is going to be done in creating a UI for the althea  contracts that is capable of interfacing with the multisig contracts. The easiest solution I can think of is forking current multisig frontends (either safe or multisig) and adding the current althea front end to it.
